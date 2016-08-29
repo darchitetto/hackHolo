@@ -37,3 +37,8 @@ bin/
 ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
+
+Players/
+ShaderCache/
+metadata/
+*.log
