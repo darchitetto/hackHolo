@@ -4,7 +4,9 @@
 [Tt]emp/
 [Oo]bj/
 [Bb]uild
-/[Ll]ibrary/
+[Ll]ibrary/
+UWP/
+App/
 sysinfo.txt
 *.stackdump
  
@@ -21,7 +23,7 @@ bin/
 /*.csproj
 /*.pidb
 /*.suo
-/*.sln*
+*.sln*
 /*.user
 /*.unityproj
 /*.booproj
@@ -38,7 +40,4 @@ ehthumbs.db
 [Tt]humbs.db
 [Dd]esktop.ini
 
-Players/
-ShaderCache/
-metadata/
 *.log
