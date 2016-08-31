@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 public class CreatePyramid : MonoBehaviour {
 
@@ -32,7 +34,7 @@ public class CreatePyramid : MonoBehaviour {
 		Instantiate(testToPlace, new Vector3((float).125, (float) .25, 0), Quaternion.identity);
 		Instantiate(testToPlace, new Vector3((float).375, (float).25, 0), Quaternion.identity);
 		Instantiate(testToPlace, new Vector3((float).625, (float).25, 0), Quaternion.identity);
-		Instantiate(testToPlace, new Vector3(1, (float).875, 0), Quaternion.identity);
+		Instantiate(testToPlace, new Vector3((float).875, (float).25, 0), Quaternion.identity);
 		Instantiate(testToPlace, new Vector3((float)1.125, (float).25, 0), Quaternion.identity);
 
 		Instantiate(defectToPlace, new Vector3((float).25, (float).5, 0), Quaternion.identity);
@@ -40,14 +42,23 @@ public class CreatePyramid : MonoBehaviour {
 		Instantiate(defectToPlace, new Vector3((float).75, (float).5, 0), Quaternion.identity);
 		Instantiate(defectToPlace, new Vector3(1, (float).5, 0), Quaternion.identity);
 
-		Instantiate(storyToPlace, new Vector3((float).375, 1, 0), Quaternion.identity);
-		Instantiate(storyToPlace, new Vector3((float).625, 1, 0), Quaternion.identity);
-		Instantiate(storyToPlace, new Vector3((float).875, 1, 0), Quaternion.identity);
+		Instantiate(storyToPlace, new Vector3((float).375, (float).75, 0), Quaternion.identity);
+		Instantiate(storyToPlace, new Vector3((float).625, (float).75, 0), Quaternion.identity);
+		Instantiate(storyToPlace, new Vector3((float).875, (float).75, 0), Quaternion.identity);
 
-		Instantiate(epicToPlace, new Vector3((float).625, (float)1.25, 0), Quaternion.identity);
-		Instantiate(epicToPlace, new Vector3((float).875, (float)1.25, 0), Quaternion.identity);
+		Instantiate(epicToPlace, new Vector3((float).5, (float)1, 0), Quaternion.identity);
+		Instantiate(epicToPlace, new Vector3((float).75, (float)1, 0), Quaternion.identity);
 
-		Instantiate(projectToPlace, new Vector3((float)1.25, (float)1.5, 0), Quaternion.identity);
+		Instantiate(projectToPlace, new Vector3((float).6, (float)1.25, 0), Quaternion.identity);
+
+		//Rigidbody rigid = new Rigidbody();
+//		Regex r = new Regex(".*\\(Clone\\)$");
+//
+//		foreach (GameObject o in FindObjectsOfType<GameObject>().Where(o => r.IsMatch(o.name)))
+//		{
+//			o.AddComponent<Rigidbody>();
+//		}
+		
 
 	}
 
