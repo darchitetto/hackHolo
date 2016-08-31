@@ -211,6 +211,7 @@
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
+     <Compile Include="Assets\Scripts\DeletePersist.cs" />
      <Compile Include="Assets\Scripts\PersistoMatic.cs" />
      <Compile Include="Assets\Scripts\PlaceOnTap.cs" />
      <Compile Include="Assets\Scripts\RotationScript.cs" />
