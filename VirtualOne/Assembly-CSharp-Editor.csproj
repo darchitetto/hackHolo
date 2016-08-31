@@ -45,13 +45,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPortal.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployPrefs.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployTools.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildDeployWindow.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\BuildSLNUtilities.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\HoloToolkitCommands.cs" />
-     <Compile Include="Assets\HoloToolkit\Build\Editor\XdeGuestLocator.cs" />
      <Compile Include="Assets\HoloToolkit\Sharing\Editor\SharingMenu.cs" />
      <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerBaseEditor.cs" />
      <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerEditor.cs" />

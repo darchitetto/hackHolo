@@ -218,7 +218,6 @@
      <Compile Include="Assets\Scripts\RotationScript.cs" />
      <Compile Include="Assets\Scripts\Siren.cs" />
      <Compile Include="Assets\Scripts\SirenClickManager.cs" />
-     <Compile Include="Assets\Scripts\SirenSound.cs" />
      <Compile Include="Assets\Scripts\SpeechManager.cs" />
      <Compile Include="Assets\Scripts\TapToPlaceEx.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
