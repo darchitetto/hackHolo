@@ -211,6 +211,11 @@
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroup.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\Scripts\PlaneTargetGroupPicker.cs" />
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
+<<<<<<< c5ead3b1dab0fac2f0d32776eb4b8a812480d1a7
+     <Compile Include="Assets\Scripts\DeletePersist.cs" />
+=======
+     <Compile Include="Assets\Scripts\Cannon.cs" />
+>>>>>>> add cannon script to throw blocks
      <Compile Include="Assets\Scripts\Cone.cs" />
      <Compile Include="Assets\Scripts\HideObject.cs" />
      <Compile Include="Assets\Scripts\PersistoMatic.cs" />
@@ -218,6 +223,7 @@
      <Compile Include="Assets\Scripts\RotationScript.cs" />
      <Compile Include="Assets\Scripts\Siren.cs" />
      <Compile Include="Assets\Scripts\SirenClickManager.cs" />
+     <Compile Include="Assets\Scripts\SirenSound.cs" />
      <Compile Include="Assets\Scripts\SpeechManager.cs" />
      <Compile Include="Assets\Scripts\TapToPlaceEx.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
