@@ -213,6 +213,7 @@
      <Compile Include="Assets\HoloToolkit\Utilities\Tests\TextToSpeechManagerTest.cs" />
      <Compile Include="Assets\Scripts\Cannon.cs" />
      <Compile Include="Assets\Scripts\Cone.cs" />
+     <Compile Include="Assets\Scripts\CreatePyramid.cs" />
      <Compile Include="Assets\Scripts\DeletePersist.cs" />
      <Compile Include="Assets\Scripts\DestroyObjects.cs" />
      <Compile Include="Assets\Scripts\HideObject.cs" />
@@ -224,8 +225,10 @@
      <Compile Include="Assets\Scripts\SirenSound.cs" />
      <Compile Include="Assets\Scripts\SpeechManager.cs" />
      <Compile Include="Assets\Scripts\TapToPlaceEx.cs" />
+     <Compile Include="Assets\Scripts\resetPyramid.cs" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurable.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.cginc" />
+     <None Include="Assets\KajamansRoads\FileNamesDescription.txt" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\UnlitConfigurableTransparent.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurable.cginc" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurable.shader" />
@@ -235,6 +238,7 @@
      <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Wireframe.shader" />
      <None Include="Assets\HoloToolkit\Input\Shaders\CursorShader.shader" />
      <None Include="Assets\HoloToolkit\SpatialMapping\Shaders\Occlusion.shader" />
+     <None Include="Assets\KajamansRoads\Free\ReadMe.txt" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\LambertianConfigurableTransparent.shader" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\HoloToolkitCommon.cginc" />
      <None Include="Assets\HoloToolkit\Utilities\Shaders\VertexLitConfigurableTransparent.shader" />
