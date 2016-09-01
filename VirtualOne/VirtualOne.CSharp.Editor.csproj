@@ -114,15 +114,15 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scenes\Editor\ConfigureMenu.cs" />
+    <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scenes\Editor\EditorGUIExtensions.cs" />
+    <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scenes\Editor\EditorGUILayoutExtensions.cs" />
+    <Compile Include="Assets\HoloToolkit-Examples\GazeRuler\Scenes\Editor\LayerMaskExtensions.cs" />
     <Compile Include="Assets\HoloToolkit\Sharing\Editor\SharingMenu.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerBaseEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioManagerEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioMiniManagerEditor.cs" />
     <Compile Include="Assets\HoloToolkit\SpatialSound\Scripts\UAudioManager\Editor\UAudioProfiler.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Editor\ConfigureMenu.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Editor\EditorGUIExtensions.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Editor\EditorGUILayoutExtensions.cs" />
-    <Compile Include="Assets\HoloToolkit\Utilities\Editor\LayerMaskExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\HoloToolkit\Input\Shaders\CursorShader.shader" />
