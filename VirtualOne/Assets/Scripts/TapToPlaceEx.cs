@@ -33,6 +33,9 @@ public partial class TapToPlaceEx : MonoBehaviour
 	[Tooltip("Place parent of object instead of object")]
 	public bool PlaceParent = false;
 
+	[Tooltip("Place parent of object instead of object")]
+	public bool RotateOnPickup = false;
+
 	[HideInInspector]
     public bool placing = false;
 
@@ -129,13 +132,22 @@ public partial class TapToPlaceEx : MonoBehaviour
 		                this.transform.position = hitInfo.point;
 	                }
 
-	                // Rotate this object to face the user.
-                    Quaternion toQuat = Camera.main.transform.localRotation;
-                    toQuat.x = 0;
-                    toQuat.z = 0;
-					if (PlaceParent) { this.transform.parent.rotation = toQuat; }
-					else { this.transform.rotation = toQuat; }
-				}
+					// Rotate this object to face the user.
+	                if (RotateOnPickup)
+	                {
+		                Quaternion toQuat = Camera.main.transform.localRotation;
+		                toQuat.x = 0;
+		                toQuat.z = 0;
+		                if (PlaceParent)
+		                {
+			                this.transform.parent.rotation = toQuat;
+		                }
+		                else
+		                {
+			                this.transform.rotation = toQuat;
+		                }
+	                }
+                }
             }
             else
             {
@@ -156,13 +168,22 @@ public partial class TapToPlaceEx : MonoBehaviour
 		            this.transform.position = position;
 	            }
 
-                // Rotate this object to face the user.
-                Quaternion toQuat = Camera.main.transform.localRotation;
-                toQuat.x = 0;
-                toQuat.z = 0;
-				if (PlaceParent) { this.transform.parent.rotation = toQuat; }
-                else{ this.transform.rotation = toQuat; }
-			}
+	            if (RotateOnPickup)
+	            {
+		            // Rotate this object to face the user.
+		            Quaternion toQuat = Camera.main.transform.localRotation;
+		            toQuat.x = 0;
+		            toQuat.z = 0;
+		            if (PlaceParent)
+		            {
+			            this.transform.parent.rotation = toQuat;
+		            }
+		            else
+		            {
+			            this.transform.rotation = toQuat;
+		            }
+	            }
+            }
         }
     }
 }
