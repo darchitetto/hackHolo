@@ -51,7 +51,6 @@ public class CreatePyramid : MonoBehaviour {
 
 		Instantiate(projectToPlace, new Vector3((float).6, (float)1.25, 0), Quaternion.identity);
 
-		//Rigidbody rigid = new Rigidbody();
 //		Regex r = new Regex(".*\\(Clone\\)$");
 //
 //		foreach (GameObject o in FindObjectsOfType<GameObject>().Where(o => r.IsMatch(o.name)))
