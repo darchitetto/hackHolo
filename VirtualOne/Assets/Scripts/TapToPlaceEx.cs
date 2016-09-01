@@ -30,7 +30,10 @@ public partial class TapToPlaceEx : MonoBehaviour
     [Tooltip("Show world mesh when placing object")]
     public bool ShowMesh = false;
 
-    [HideInInspector]
+	[Tooltip("Place parent of object instead of object")]
+	public bool PlaceParent = false;
+
+	[HideInInspector]
     public bool placing = false;
 
 
@@ -111,20 +114,28 @@ public partial class TapToPlaceEx : MonoBehaviour
                 if (Physics.Raycast(headPosition, gazeDirection, out hitInfo,
                     30.0f, SpatialMappingManager.Instance.LayerMask))
                 {
-                    // Move this object to where the raycast
-                    // hit the Spatial Mapping mesh.
-                    // Here is where you might consider adding intelligence
-                    // to how the object is placed.  For example, consider
-                    // placing based on the bottom of the object's
-                    // collider so it sits properly on surfaces.
-                    this.transform.position = hitInfo.point;
+					// Move this object to where the raycast
+					// hit the Spatial Mapping mesh.
+					// Here is where you might consider adding intelligence
+					// to how the object is placed.  For example, consider
+					// placing based on the bottom of the object's
+					// collider so it sits properly on surfaces.
+	                if (PlaceParent)
+	                {
+		                this.transform.parent.position = hitInfo.point;
+	                }
+	                else
+	                {
+		                this.transform.position = hitInfo.point;
+	                }
 
-                    // Rotate this object to face the user.
+	                // Rotate this object to face the user.
                     Quaternion toQuat = Camera.main.transform.localRotation;
                     toQuat.x = 0;
                     toQuat.z = 0;
-                    this.transform.rotation = toQuat;
-                }
+					if (PlaceParent) { this.transform.parent.rotation = toQuat; }
+					else { this.transform.rotation = toQuat; }
+				}
             }
             else
             {
@@ -134,14 +145,24 @@ public partial class TapToPlaceEx : MonoBehaviour
                 var origin = Camera.main.transform.position;
 
                 var position = origin + direction * CameraDistance;
-                this.transform.position = position;
+	            if (PlaceParent)
+	            {
+		            var parentPosition = this.transform.parent.position;
+		            var parentOffset = parentPosition - this.transform.position;
+		            this.transform.parent.position = position + parentOffset;
+	            }
+	            else
+	            {
+		            this.transform.position = position;
+	            }
 
                 // Rotate this object to face the user.
                 Quaternion toQuat = Camera.main.transform.localRotation;
                 toQuat.x = 0;
                 toQuat.z = 0;
-                this.transform.rotation = toQuat;
-            }
+				if (PlaceParent) { this.transform.parent.rotation = toQuat; }
+                else{ this.transform.rotation = toQuat; }
+			}
         }
     }
 }
